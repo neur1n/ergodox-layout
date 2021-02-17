@@ -1,5 +1,5 @@
 # ergodox-layout
 
-The latest configuration can be accessed [here](https://configure.ergodox-ez.com/ergodox-ez/layouts/yZDRB/latest/0).
+The latest configuration can be accessed [here](https://configure.ergodox-ez.com/ergodox-ez/layouts/BOagW/latest/0).
 
 ![](./screenshot.png)
