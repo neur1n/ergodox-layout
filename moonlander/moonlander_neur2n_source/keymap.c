@@ -26,6 +26,9 @@
 #include "keymap_estonian.h"
 #include "keymap_belgian.h"
 #include "keymap_us_international.h"
+#include "keymap_croatian.h"
+#include "keymap_turkish_q.h"
+#include "keymap_slovak.h"
 
 #define KC_MAC_UNDO LGUI(KC_Z)
 #define KC_MAC_CUT LGUI(KC_X)
@@ -58,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LCTRL,       KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           KC_LBRACKET,                                                                    KC_RBRACKET,    KC_H,           KC_J,           KC_K,           KC_L,           KC_SCOLON,      KC_MINUS,       
     KC_LALT,        KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_EQUAL,       
     KC_ESCAPE,      KC_PGUP,        KC_PGDOWN,      KC_DELETE,      KC_BSPACE,      KC_AUDIO_VOL_DOWN,                                                                                                KC_AUDIO_VOL_UP,KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_LGUI,        
-    KC_SPACE,       KC_LSHIFT,      KC_PC_COPY,                     KC_PC_PASTE,    KC_RSHIFT,      KC_ENTER
+    KC_SPACE,       KC_LSHIFT,      KC_PC_COPY,                     KC_PC_PASTE,    KC_RCTRL,       KC_ENTER
   ),
   [1] = LAYOUT_moonlander(
     KC_F11,         KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          TOGGLE_LAYER_COLOR,                                KC_TRANSPARENT, KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_F12,         
@@ -70,7 +73,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 };
 
-extern bool g_suspend_state;
 extern rgb_config_t rgb_matrix_config;
 
 void keyboard_post_init_user(void) {
@@ -100,7 +102,7 @@ void set_layer_color(int layer) {
 }
 
 void rgb_matrix_indicators_user(void) {
-  if (g_suspend_state || keyboard_config.disable_layer_led) { return; }
+  if (keyboard_config.disable_layer_led) { return; }
   switch (biton32(layer_state)) {
     case 1:
       set_layer_color(1);
