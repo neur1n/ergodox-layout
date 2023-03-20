@@ -1,68 +1,76 @@
-QMK Firmware Firmware20
-[33;01mWARNING:[0m
- Can not run bin/qmk! This tool will be required when the develop branch is merged on 2020 Aug 29.
 
- Please run [1mutil/qmk_install.sh[0m to install all the dependencies QMK requires.
 
-Making [1mergodox_ez[0m with keymap [1me54f2aac1665133592a7[0m
+QMK Firmware breakpoint_2022_05_28
+Making [1mergodox_ez/base[0m with keymap [1mAPZgR[0m
 
-avr-gcc (GCC) 8.3.0
-Copyright (C) 2018 Free Software Foundation, Inc.
+avr-gcc (GCC) 5.4.0
+Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-Compiling: tmk_core/common/mousekey.c                                                              Compiling: tmk_core/protocol/lufa/lufa.c                                                           Compiling: tmk_core/common/magic.c                                                                 Compiling: tmk_core/protocol/usb_descriptor.c                                                      Compiling: lib/lufa/LUFA/Drivers/USB/Class/Common/HIDParser.c                                      Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.c                                       Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.c                               Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.c                                     Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.c                                   Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.c                                         Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.c                                         Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.c                                 [32;01m[OK][0m
- [32;01m[OK][0m
-Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.c                                  [32;01m[OK][0m
-Compiling: lib/lufa/LUFA/Drivers/USB/Core/ConfigDescriptors.c                                      Compiling: lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.c                                       [32;01m[OK][0m
- [32;01m[OK][0m
-Compiling: lib/lufa/LUFA/Drivers/USB/Core/Events.c                                                 Compiling: lib/lufa/LUFA/Drivers/USB/Core/HostStandardReq.c                                         [32;01m[OK][0m
- [32;01m[OK][0m
- [32;01m[OK][0m
- [32;01m[OK][0m
-Compiling: lib/lufa/LUFA/Drivers/USB/Core/USBTask.c                                                Compiling: keyboards/ergodox_ez/matrix.c                                                           Compiling: keyboards/ergodox_ez/led_i2c.c                                                          Compiling: keyboards/ergodox_ez/ergodox_ez.c                                                        [32;01m[OK][0m
- [32;01m[OK][0m
-Compiling: quantum/quantum.c                                                                       Compiling: keyboards/ergodox_ez/keymaps/e54f2aac1665133592a7/keymap.c                               [32;01m[OK][0m
- [32;01m[OK][0m
-Compiling: quantum/led.c                                                                           Compiling: quantum/keymap_common.c                                                                  [32;01m[OK][0m
- [32;01m[OK][0m
- [32;01m[OK][0m
-Compiling: quantum/matrix_common.c                                                                  [32;01m[OK][0m
-Compiling: quantum/debounce/sym_eager_pr.c                                                          [32;01m[OK][0m
+Generating: .build/APZgR/obj_ergodox_ez_base/src/layouts.h                                          [32;01m[OK][0m
+Generating: .build/APZgR/obj_ergodox_ez_base/src/default_keyboard.h                                 [32;01m[OK][0m
+Generating: .build/APZgR/obj_ergodox_ez_base/src/default_keyboard.c                                 [32;01m[OK][0m
+Generating: .build/APZgR/obj_ergodox_ez_base/src/info_config.h                                      [32;01m[OK][0m
+Compiling: keyboards/ergodox_ez/led_i2c.c                                                           [32;01m[OK][0m
+Compiling: quantum/bitwise.c                                                                        [32;01m[OK][0m
+Compiling: .build/APZgR/obj_ergodox_ez_base/src/default_keyboard.c                                  [32;01m[OK][0m
+Compiling: keyboards/ergodox_ez/matrix.c                                                            [32;01m[OK][0m
+Compiling: quantum/quantum.c                                                                        [32;01m[OK][0m
+Compiling: keyboards/ergodox_ez/ergodox_ez.c                                                        [32;01m[OK][0m
+Compiling: quantum/keymap_introspection.c                                                           [32;01m[OK][0m
+Compiling: quantum/led.c                                                                            [32;01m[OK][0m
+Compiling: quantum/action_tapping.c                                                                 [32;01m[OK][0m
+Compiling: quantum/eeconfig.c                                                                       [32;01m[OK][0m
+Compiling: quantum/action_util.c                                                                    [32;01m[OK][0m
+Compiling: quantum/action.c                                                                         [32;01m[OK][0m
+Compiling: quantum/action_layer.c                                                                   [32;01m[OK][0m
 Compiling: quantum/keycode_config.c                                                                 [32;01m[OK][0m
-Compiling: quantum/process_keycode/process_space_cadet.c                                           Compiling: quantum/process_keycode/process_magic.c                                                 Compiling: quantum/process_keycode/process_grave_esc.c                                              [32;01m[OK][0m
- [32;01m[OK][0m
-Compiling: drivers/avr/i2c_master.c                                                                Compiling: tmk_core/common/host.c                                                                   [32;01m[OK][0m
-Compiling: tmk_core/common/keyboard.c                                                               [32;01m[OK][0m
- [32;01m[OK][0m
- [32;01m[OK][0m
-Compiling: tmk_core/common/action_tapping.c                                                        Compiling: tmk_core/common/action.c                                                                 [32;01m[OK][0m
-Compiling: tmk_core/common/action_layer.c                                                          Compiling: tmk_core/common/action_macro.c                                                           [32;01m[OK][0m
- [32;01m[OK][0m
- [32;01m[OK][0m
-Compiling: tmk_core/common/print.c                                                                 Compiling: tmk_core/common/action_util.c                                                           Compiling: tmk_core/common/debug.c                                                                  [32;01m[OK][0m
-Compiling: tmk_core/common/sendchar_null.c                                                          [32;01m[OK][0m
- [32;01m[OK][0m
-Compiling: tmk_core/common/util.c                                                                   [32;01m[OK][0m
-Compiling: tmk_core/common/eeconfig.c                                                               [32;01m[OK][0m
- [32;01m[OK][0m
-Compiling: tmk_core/common/report.c                                                                Compiling: tmk_core/common/avr/suspend.c                                                            [32;01m[OK][0m
- [32;01m[OK][0m
- [32;01m[OK][0m
-Compiling: tmk_core/common/avr/timer.c                                                              [32;01m[OK][0m
- [32;01m[OK][0m
-Compiling: tmk_core/common/avr/bootloader.c                                                         [32;01m[OK][0m
-Assembling: tmk_core/common/avr/xprintf.S                                                          Archiving: .build/obj_ergodox_ez_e54f2aac1665133592a7/i2c_master.o                                  [32;01m[OK][0m
- [32;01m[OK][0m
- [32;01m[OK][0m
- [32;01m[OK][0m
- [32;01m[OK][0m
- [32;01m[OK][0m
- [32;01m[OK][0m
- [32;01m[OK][0m
- [32;01m[OK][0m
-Linking: .build/ergodox_ez_e54f2aac1665133592a7.elf                                                 [32;01m[OK][0m
-Creating load file for flashing: .build/ergodox_ez_e54f2aac1665133592a7.hex                         [32;01m[OK][0m
-Copying ergodox_ez_e54f2aac1665133592a7.hex to qmk_firmware folder                                  [32;01m[OK][0m
-Checking file size of ergodox_ez_e54f2aac1665133592a7.hex                                           [32;01m[OK][0m
- * The firmware size is fine - 16122/32256 (49%, 16134 bytes free)
+Compiling: quantum/sync_timer.c                                                                     [32;01m[OK][0m
+Compiling: quantum/keyboard.c                                                                       [32;01m[OK][0m
+Compiling: quantum/logging/debug.c                                                                  [32;01m[OK][0m
+Compiling: quantum/logging/sendchar.c                                                               [32;01m[OK][0m
+Compiling: quantum/keymap_common.c                                                                  [32;01m[OK][0m
+Compiling: quantum/main.c                                                                           [32;01m[OK][0m
+Compiling: quantum/bootmagic/magic.c                                                                [32;01m[OK][0m
+Compiling: quantum/debounce/sym_eager_pr.c                                                          [32;01m[OK][0m
+Compiling: quantum/matrix_common.c                                                                  [32;01m[OK][0m
+Compiling: quantum/mousekey.c                                                                       [32;01m[OK][0m
+Compiling: quantum/oryx.c                                                                           [32;01m[OK][0m
+Assembling: platforms/avr/xprintf.S                                                                 [32;01m[OK][0m
+Compiling: platforms/avr/printf.c                                                                   [32;01m[OK][0m
+Compiling: quantum/send_string/send_string.c                                                        [32;01m[OK][0m
+Compiling: tmk_core/protocol/usb_device_state.c                                                     [32;01m[OK][0m
+Compiling: platforms/avr/drivers/i2c_master.c                                                       [32;01m[OK][0m
+Compiling: tmk_core/protocol/report.c                                                               [32;01m[OK][0m
+Compiling: tmk_core/protocol/host.c                                                                 [32;01m[OK][0m
+Compiling: tmk_core/protocol/usb_util.c                                                             [32;01m[OK][0m
+Compiling: platforms/avr/hardware_id.c                                                              [32;01m[OK][0m
+Compiling: platforms/suspend.c                                                                      [32;01m[OK][0m
+Compiling: platforms/avr/platform.c                                                                 [32;01m[OK][0m
+Compiling: platforms/avr/timer.c                                                                    [32;01m[OK][0m
+Compiling: platforms/avr/bootloaders/halfkay.c                                                      [32;01m[OK][0m
+Compiling: platforms/avr/suspend.c                                                                  [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Class/Common/HIDParser.c                                       [32;01m[OK][0m
+Compiling: tmk_core/protocol/usb_descriptor.c                                                       [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.c                                        [32;01m[OK][0m
+Compiling: tmk_core/protocol/lufa/lufa.c                                                            [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.c                                          [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.c                                    [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.c                                      [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.c                                          [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.c                                [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.c                                 [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Core/Events.c                                                  [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.c                                  [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Core/HostStandardReq.c                                         [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Core/ConfigDescriptors.c                                       [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.c                                       [32;01m[OK][0m
+Archiving: .build/APZgR/obj_ergodox_ez_base_APZgR/i2c_master.o                                      [32;01m[OK][0m
+Compiling: lib/lufa/LUFA/Drivers/USB/Core/USBTask.c                                                 [32;01m[OK][0m
+Compiling: tmk_core/protocol/lufa/usb_util.c                                                        [32;01m[OK][0m
+Linking: .build/APZgR/ergodox_ez_base_APZgR.elf                                                     [32;01m[OK][0m
+Creating load file for flashing: .build/APZgR/ergodox_ez_base_APZgR.hex                             [32;01m[OK][0m
+Copying ergodox_ez_base_APZgR.hex to qmk_firmware folder                                            [32;01m[OK][0m
+Checking file size of ergodox_ez_base_APZgR.hex                                                     [32;01m[OK][0m
+ * The firmware size is fine - 16716/32256 (51%, 15540 bytes free)
