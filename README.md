@@ -1,6 +1,6 @@
 # ergodox-layout
 
-The latest configuration can be accessed [here](https://configure.ergodox-ez.com/ergodox-ez/layouts/APZgR/latest/0) (Ergodox) and [here](https://configure.ergodox-ez.com/moonlander/layouts/dagBZ/latest/0) (Moonlander MK1).
+The latest configuration can be accessed <a href="https://configure.ergodox-ez.com/ergodox-ez/layouts/APZgR/latest/0" target="_blank">here (Ergodox)</a> and <a href="https://configure.ergodox-ez.com/moonlander/layouts/dagBZ/latest/0" target="_blank"> here (Moonlander MK1)</a>.
 
 ![](./ergodox/screenshot.png)
 
